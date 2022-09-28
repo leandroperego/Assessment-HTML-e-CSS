@@ -1,5 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*----------ESTRUTURA PRIMÁRIA------------*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+}
+
+#telaInicial{
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/camaradeputados.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header{
+  width: 100%;
+/*   border: 2px solid pink; */
+/*   display: flex;
+  justify-content: space-between; */
+  padding-left: 200px;
+  position: absolute;
+  top: 20px;
+}
+main{
+  
+}
+
+footer{
+  
+}
+/*----------FIM ESTRUTURA PRIMÁRIA------------*/
+
+/*-------LOGO-------*/
+section#logo{
+  width: 160px;
+  height: 55px;
+/*   border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: left;
+}
+
+img#imgLogo{
+  float: left;
+}
+/*-------FIM LOGO-------*/
+/*-------NAV------------*/
+nav{
+/*   border: 1px solid yellow; */
+/*   display: inline-block; */
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+ul#ulNav{
+  list-style-type: none;
+/*   border: 1px solid red; */
+  margin-left: 40%;
+}
+li.liNav{
+  font-size: 12px;
+  float: left;
+  font-weight: bold;
+/*   border: 1px solid green; */
+  padding: 0px 10px;
+}
+/*-------FIM NAV------------*/
+/*-------CHAMADA INICIAL------------*/
+#chamadaInicial{
+/*   border: 1px solid purple; */
+/*   text-align: center; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#chamadaInicial>:nth-child(1){
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+#chamadaInicial>h4, #chamadaInicial>:nth-child(1){
+  text-shadow: 3px 3px rgb(000,50,80);
+}
+#chamadaInicial>h4{
+  margin-top: 5px;
+  margin-bottom: 30px;
+  opacity: 85%;
+}
+#chamadaInicial>button{
+  width: 130px;
+}
+
+/*-------FIM CHAMADA INICIAL------------*/
+/*-------------CONFIGURAÇÕES GERAIS---------------  */
+.clear{
+  clear: both;
+}
+
+.btPadrao{
+  background-color: rgb(000,50,80);
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+.btPadrao:hover{
+  background-color: rgba(255,255,255,1);
+  color: rgb(000,50,80);;
+  cursor: pointer;
+}
+
+.aTelaInicial:link, .aTelaInicial:visited, .aTelaInicial:hover, aTelaInicial{
+  font-size: 12px;
+  color: white;
+}
+
+.aTelaInicial:hover{
+  text-decoration: underline;
 }
