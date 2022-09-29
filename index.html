@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,7 @@
     <meta name="author" content="Leandro Perego">
 	  <meta name="description" content="WebSite Ficticio da Câmara dos Deputados do Brasil">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
   </head>
   <body>
     <article id="telaInicial">
@@ -39,7 +40,23 @@
       
     </article>
     <main>
-      
+      <article id="consultaDeputados">
+        <h2>DEPUTADOS</h2>
+        <p>Consulte aqui os Deputados da Legislatura atual:</p>
+        <input type="text" value="" placeholder="Nome do Deputado" >
+        <button id="btBuscarDeputados" class="btPadrao">
+<!--            INSERIR ICONE -->
+            BUSCAR
+        </button>
+        <section id="boxListagemDeputados">
+          <article class="fichaDeputado">
+            <img src="img/deputado1.jpg" alt="">
+            <section class="informativo">
+              <p>Fulano de tal (PL-BA)</p>
+            </section>
+          </article>
+        </section>
+      </article>
     </main>
     <footer>
       

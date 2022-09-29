@@ -33,7 +33,9 @@ header{
   top: 20px;
 }
 main{
-  
+  width: 80%;
+  margin: 0px auto;
+  border: 1px solid red;
 }
 
 footer{
@@ -77,6 +79,7 @@ li.liNav{
   padding: 0px 10px;
 }
 /*-------FIM NAV------------*/
+
 /*-------CHAMADA INICIAL------------*/
 #chamadaInicial{
 /*   border: 1px solid purple; */
@@ -103,8 +106,39 @@ li.liNav{
 #chamadaInicial>button{
   width: 130px;
 }
-
 /*-------FIM CHAMADA INICIAL------------*/
+
+/*-------SEÇÃO DEPUTADOS------------*/
+#consultaDeputados{
+  text-align: center;
+}
+#consultaDeputados>h2{
+  color: rgb(000,50,80);
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+#consultaDeputados>p{
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+input[placeholder="Nome do Deputado"]{
+  padding: 10px;
+  font-size: 10px;
+  opacity: 50%;
+}
+#btBuscarDeputados, input[placeholder="Nome do Deputado"]{
+  display: block;
+  width: 35%;
+  margin: 0px auto;
+}
+#btBuscarDeputados{
+  margin-top: 15px;
+}
+/*-------FIM SEÇÃO DEPUTADOS------------*/
+
 /*-------------CONFIGURAÇÕES GERAIS---------------  */
 .clear{
   clear: both;
@@ -117,12 +151,12 @@ li.liNav{
   font-size: 10px;
   font-weight: bold;
   color: white;
-  border: none;
+  border: 2px solid rgb(000,50,80);
 }
 
 .btPadrao:hover{
   background-color: rgba(255,255,255,1);
-  color: rgb(000,50,80);;
+  color: rgb(000,50,80);
   cursor: pointer;
 }
 
