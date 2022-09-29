@@ -42,18 +42,18 @@
       
     </article>
     <main>
-      <article id="consultaDeputados">
+      <article id="consultaDeputados" class="consulta">
         <h2>DEPUTADOS</h2>
         <p>Consulte aqui os Deputados da Legislatura atual:</p>
         <input type="text" value="" placeholder="Nome do Deputado" >
         <button id="btBuscarDeputados" class="btPadrao">
-<!--            INSERIR ICONE -->
+            <i class="fa fa-search"></i>
             BUSCAR
         </button>
         
         <section id="boxListagemDeputados">
           
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado1.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -73,7 +73,7 @@
             </section>
           </article>
 
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado2.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -93,7 +93,7 @@
             </section>
           </article>
 
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado3.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -113,7 +113,7 @@
             </section>
           </article>
 
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado4.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -133,7 +133,7 @@
             </section>
           </article>
 
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado5.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -153,7 +153,7 @@
             </section>
           </article>
 
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado6.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -173,7 +173,7 @@
             </section>
           </article>
 
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado7.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -193,7 +193,7 @@
             </section>
           </article>
 
-          <article class="fichaDeputado">
+          <article class="boxListagem">
             <img src="img/deputado8.jpg" alt="" width="100%">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
@@ -215,6 +215,86 @@
           
         </section>
       </article>
+      
+      <article id="consultaPartidos" class="consulta">
+        <h2>PARTIDOS</h2>
+        <p>Consulte aqui os Partidos Existentes:</p>
+        <input type="text" value="" placeholder="Nome do Partido" >
+        <button id="btBuscarPartido" class="btPadrao">
+            <i class="fa fa-search"></i>
+            BUSCAR
+        </button>
+        
+        <section id="boxListagemPartido">
+          
+          <article class="boxListagem">
+            <img class="imgPartido" src="img/logopartido1.png" alt="" width="95%">
+            <section class="informativo, informativoPartido">
+              <p class="pPartido">Partido XPTO</p>
+                <div id="icons">
+                  <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </section>
+          </article>
+
+          <article class="boxListagem">
+            <img class="imgPartido" src="img/logopartido2.png" alt="" width="95%">
+            <section class="informativo, informativoPartido">
+              <p class="pPartido">Partido XPTO</p>
+                <div id="icons">
+                  <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </section>
+          </article>
+
+          <article class="boxListagem">
+            <img class="imgPartido" src="img/logopartido3.gif" alt="" width="95%">
+            <section class="informativo, informativoPartido">
+              <p class="pPartido">Partido XPTO</p>
+                <div id="icons">
+                  <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </section>
+          </article>
+
+          <article class="boxListagem">
+            <img class="imgPartido" src="img/logopartido4.png" alt="">
+            <section class="informativo, informativoPartido">
+              <p class="pPartido">Partido XPTO</p>
+                <div id="icons">
+                  <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </section>
+          </article>
+      </article>
+      
+      <article id="noticias">
+        <h2>NOTÍCIAS</h2>
+        <section id="noticia1">
+          <img src="img/queimada.jpg" alt="Queimada na Amazônia" width="50%">
+          <section id="descricaoNoticia" style="width: 50%">
+          <h3>Comitiva da Câmara dos Deputados visita áreas queimadas no Pantanal</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus accusamus cum nisi, debitis repudiandae itaque voluptates omnis ducimus libero id quas deserunt saepe, corporis sit culpa adipisci voluptatibus hic!
+          </p>
+          <footer id="footerNoticia">
+            Fonte: Agência Câmara de Notícias / 18/09/2020 - 16:01
+          </footer>
+          <button id="btVejaMaisNoticias" class="btPadrao">
+            VEJA MAIS NOTÍCIAS
+          </button>
+          </section>
+        </section>
+      </article>
+      
     </main>
     <footer>
       

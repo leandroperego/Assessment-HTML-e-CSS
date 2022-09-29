@@ -117,57 +117,63 @@ li.liNav{
 /*-------FIM CHAMADA INICIAL------------*/
 
 /*-------SEÇÃO DEPUTADOS------------*/
-#consultaDeputados{
+.consulta{
   text-align: center;
 }
-#consultaDeputados>h2{
+.consulta>h2, #noticias>h2{
   color: rgb(000,50,80);
   font-size: 14px;
   margin-top: 50px;
   margin-bottom: 15px;
+  text-align: center;
 }
-#consultaDeputados>p{
+.consulta>p{
   color: #333;
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 25px;
 }
-input[placeholder="Nome do Deputado"]{
+input[placeholder="Nome do Deputado"], input[placeholder="Nome do Partido"]{
   padding: 10px;
   font-size: 10px;
   opacity: 50%;
 }
-#btBuscarDeputados, input[placeholder="Nome do Deputado"]{
+#btBuscarDeputados, #btBuscarPartido, input[placeholder="Nome do Deputado"], input[placeholder="Nome do Partido"]{
   display: block;
   width: 35%;
   margin: 0px auto;
 }
-#btBuscarDeputados{
+#btBuscarDeputados, #btBuscarPartido{
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+#btBuscarDeputados>i, #btBuscarPartido>i{
+  font-size: 12px;
+}
 /*----BOX DEPUTADOS----*/
-#boxListagemDeputados{
-  border: 1px solid green;
+#boxListagemDeputados, #boxListagemPartido{
+/*   border: 1px solid green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.fichaDeputado{
+.boxListagem{
   width: 23%;
   background-color: white;
   margin-bottom: 50px;
 /*   border: 1px solid yellow; */
 }
 .informativo{
-/*   border: 1px solid blue; */
   padding: 30px 35px 0px 35px;
   font-size: 10px;
   color: gray;
+  border: 1px solid lightgray;
+  border-top: none;
 }
 .informativo>:nth-child(1){
   font-size: 25px;
-  color: #444;;
+  color: #444;
 }
 .descricaoDeputado{
 /*   border: 1px solid green; */
@@ -189,6 +195,59 @@ input[placeholder="Nome do Deputado"]{
 }
 /*----FIM BOX DEPUTADOS----*/
 /*-------FIM SEÇÃO DEPUTADOS------------*/
+
+/*-------SEÇÃO PARTIDOS------------*/
+.pPartido{
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  padding: 15px 15px 5px 15px;
+}
+
+.imgPartido{
+  width: 150px;
+  height: 150px;
+}
+
+.informativoPartido{
+  border: none;
+}
+/*-------FIM SEÇÃO PARTIDOS------------*/
+/*-------SEÇÃO NOTICIAS------------*/
+#noticia1{
+  display: flex;
+/*   border: 1px solid blue; */
+}
+
+#descricaoNoticia{
+/*   border: 1px solid yellow; */
+  padding-left: 20px;
+  position: relative;
+}
+#descricaoNoticia>h3{
+  text-align: center;
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+#descricaoNoticia>p, #footerNoticia{
+  color: gray;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#footerNoticia{
+  text-align: center;
+}
+#btVejaMaisNoticias{
+  width: calc(100% - 20px);
+  position: absolute;
+  bottom: 0;
+}
+/*-------FIM SEÇÃO NOTICIAS------------*/
 
 /*-------------CONFIGURAÇÕES GERAIS---------------  */
 .clear{
