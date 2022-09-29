@@ -7,21 +7,29 @@
   box-sizing: border-box;
   font-size: 16px;
 }
-a{
-  text-decoration: none;
+html{
+  
 }
+
 body{
   font-family: 'Roboto', sans-serif;
   background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
 }
 
 #telaInicial{
   color: white;
   width: 100vw;
   height: 100vh;
-  background-image: url(img/camaradeputados.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/camaradeputados.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 header{
   width: 100%;
@@ -136,7 +144,50 @@ input[placeholder="Nome do Deputado"]{
 }
 #btBuscarDeputados{
   margin-top: 15px;
+  margin-bottom: 15px;
 }
+/*----BOX DEPUTADOS----*/
+#boxListagemDeputados{
+  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fichaDeputado{
+  width: 23%;
+  background-color: white;
+  margin-bottom: 50px;
+/*   border: 1px solid yellow; */
+}
+.informativo{
+/*   border: 1px solid blue; */
+  padding: 30px 35px 0px 35px;
+  font-size: 10px;
+  color: gray;
+}
+.informativo>:nth-child(1){
+  font-size: 25px;
+  color: #444;;
+}
+.descricaoDeputado{
+/*   border: 1px solid green; */
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.descricaoDeputado>ul>li{
+  padding-bottom: 10px;
+  list-style-type: circle;
+}
+.descricaoDeputado>ul{
+  padding-left: 15px;
+}
+
+#icons{
+  text-align: center;
+  padding: 20px 0px;
+}
+/*----FIM BOX DEPUTADOS----*/
 /*-------FIM SEÇÃO DEPUTADOS------------*/
 
 /*-------------CONFIGURAÇÕES GERAIS---------------  */
@@ -167,4 +218,16 @@ input[placeholder="Nome do Deputado"]{
 
 .aTelaInicial:hover{
   text-decoration: underline;
+}
+
+#icons>:nth-child(n){
+  background-color: rgb(000,50,80);
+  color: white;
+  font-size: 14px;
+  padding: 4px 6px 4px 6px;
+  border-radius: 50%;
+}
+
+.consertoIconeInstagram{
+  padding: 4px 2px 4px 2px !important;
 }
