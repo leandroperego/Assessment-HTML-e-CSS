@@ -14,20 +14,20 @@
   <body>
     <article id="telaInicial">
       <header>
-        <a class="aTelaInicial" href=""><section id="logo">
+        <a class="aTelaInicial" href="#telaInicial"><section id="logo">
           <img id="imgLogo" src="img/logo.png" alt="Logo" width="40px" height="40px">
           <h1>dados abertos</h1>
         </section></a>
 
         <nav>
           <ul id="ulNav">
-            <li class="liNav"><a class="aTelaInicial" href="">INICIO</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="">DEPUTADOS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="">PARTIDOS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="">NOTICIAS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="">EVENTOS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="">PROJETOS DE LEI</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="">CONTATO</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#telaInicial">INICIO</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#consultaDeputados">DEPUTADOS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#consultaPartidos">PARTIDOS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#noticias">NOTICIAS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#eventos">EVENTOS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#projetos">PROJETOS DE LEI</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#contato">CONTATO</a></li>
             <div class="clear"></div>
           </ul>
         </nav>
@@ -37,12 +37,12 @@
       <section id="chamadaInicial">
           <h2>QUEM SÃO OS DEPUTADOS</h2>
           <h4>Conheça os deputados, seus partidos e legislaturas.</h4>
-          <a href=""><button class="btPadrao">DEPUTADOS</button></a>
+          <a href="#consultaDeputados"><button class="btPadrao">DEPUTADOS</button></a>
       </section>
       
     </article>
     <main>
-      <article id="consultaDeputados" class="consulta">
+      <article id="consultaDeputados" class="cabecalho">
         <h2>DEPUTADOS</h2>
         <p>Consulte aqui os Deputados da Legislatura atual:</p>
         <input type="text" value="" placeholder="Nome do Deputado" >
@@ -216,7 +216,7 @@
         </section>
       </article>
       
-      <article id="consultaPartidos" class="consulta">
+      <article id="consultaPartidos" class="cabecalho">
         <h2>PARTIDOS</h2>
         <p>Consulte aqui os Partidos Existentes:</p>
         <input type="text" value="" placeholder="Nome do Partido" >
@@ -294,10 +294,102 @@
           </section>
         </section>
       </article>
-      
+
+      <article id="eventos" class="cabecalho">
+        <h2>EVENTOS</h2>
+        <p>Consulte aqui os eventos agendados:</p>
+        <div class="flexbox">
+          <input class="inputEventos" type="text" value="" placeholder="Descrição Evento" >
+          <input class="inputEventos" type="text" value="" placeholder="Data do Evento" >
+          <button id="btBuscarEventos" class="clear btPadrao">
+              BUSCAR
+          </button>
+        </div>
+        <div class="flexbox">
+        <section class="listagemEventos">
+          <section class="parte1Evento float">
+            <div class="dataHora" style="text-align: left"><i class="fa fa-calendar iEventos"></i><span>22/09/2020</span></div>
+            <div class="dataHora" style="text-align: left"><i class="fa fa-clock-o iEventos"></i><span>10:00</span></div>
+          </section>
+          <div class="linhaVertical linhaVerticalEvento"></div>
+          <div class="descricaoEvento">
+            <h6>CÂMARA DOS DEPUTADOS</h6>
+            <section>A atual situação da ANCINE - Evento</section>
+            <section>Técnico</section>
+            <section>Anexo II, Plenário 06</section>
+          </div>
+        </section>
+        <section class="listagemEventos">
+          <section class="parte1Evento float">
+            <div class="dataHora" style="text-align: left"><i class="fa fa-calendar iEventos"></i><span>22/09/2020</span></div>
+            <div class="dataHora" style="text-align: left"><i class="fa fa-clock-o iEventos"></i><span>10:00</span></div>
+          </section>
+          <div class="linhaVertical linhaVerticalEvento"></div>
+          <div class="descricaoEvento">
+            <h6>CÂMARA DOS DEPUTADOS</h6>
+            <section>A atual situação da ANCINE - Evento</section>
+            <section>Técnico</section>
+            <section>Anexo II, Plenário 06</section>
+          </div>
+        </section>
+        </div>
+        <button id="btEventosDaSemana" class="btPadrao">EVENTOS DA SEMANA</button>
+      </article>
+      <article id="projetos" class="cabecalho">
+        <h2>PROJETOS DE LEI</h2>
+        <p>Consulte aqui os Projetos de Lei em votação:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Nº do PL</th>
+              <th>Ementa</th>
+              <th>Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2469/2022</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis sint deleniti.</td>
+              <td>Em tramitação</td>
+            </tr>
+            <tr>
+              <td>2469/2022</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedita recusandae odit libero a ipsum autem quasi fugiat, ea doloribus consectetur velit blanditiis repudiandae dolore commodi.</td>
+              <td>Em tramitação</td>
+            </tr>
+            <tr>
+              <td>2469/2022</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae praesentium excepturi delectus quis magnam dolorem.</td>
+              <td>Em tramitação</td>
+            </tr>
+            <tr>
+              <td>2469/2022</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate esse vitae, beatae rem dolorum soluta minus.</td>
+              <td>Em tramitação</td>
+            </tr>
+            <tr>
+              <td>2469/2022</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+              <td>Em tramitação</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article id="contato" class="cabecalho">
+        <h2>CONTATO</h2>
+        <h3 class="subtitulo">Fale Conosco</h3>
+        <p>Deixe-nos suas criticas, elogios e sugestões!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur minus qui quaerat tempore ipsum enim recusandae, at libero officia omnis cum dolore praesentium quis ea reprehenderit beatae maxime! Quia, hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt illo error debitis modi voluptatem, dolor dolore, molestiae quaerat dolores quam minima itaque cum eos doloribus id. Unde, ad minus?</p>
+        <div style="text-align: center">
+        <a href="mailto:leperego@hotmail.com"><button id="btContato" class="btPadrao">ENVIE-NOS UM EMAIL</button></a>
+        </div>
+      </article>
     </main>
-    <footer>
-      
+    <footer id="rodapePagina">
+      Instituto Infnet - Assessment Fundamentos de Programação Web
     </footer>
+      <a href="#telaInicial"><i id="voltarAoTopo" class="fa fa-chevron-up"></i></a>
   </body>
 </html>
