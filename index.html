@@ -8,16 +8,18 @@
 	  <meta name="description" content="WebSite Ficticio da Câmara dos Deputados do Brasil">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
   </head>
   <body>
     <article id="telaInicial">
       <header>
-        <a class="aTelaInicial" href="#telaInicial"><section id="logo">
-          <img id="imgLogo" src="img/logo.png" alt="Logo" width="40px" height="40px">
+        <a class="aTelaInicial" href="#telaInicial">
+          <section id="logo">
+          <img id="imgLogo" src="img/logo.png" alt="Logo" width="40" height="40">
           <h1>dados abertos</h1>
-        </section></a>
+          </section>
+        </a>
 
         <nav>
           <ul id="ulNav">
@@ -28,8 +30,8 @@
             <li class="liNav"><a class="aTelaInicial" href="#eventos">EVENTOS</a></li>
             <li class="liNav"><a class="aTelaInicial" href="#projetos">PROJETOS DE LEI</a></li>
             <li class="liNav"><a class="aTelaInicial" href="#contato">CONTATO</a></li>
-            <div class="clear"></div>
           </ul>
+          <div class="clear"></div>
         </nav>
         <div class="clear"></div>
       </header>
@@ -37,7 +39,7 @@
       <section id="chamadaInicial">
           <h2>QUEM SÃO OS DEPUTADOS</h2>
           <h4>Conheça os deputados, seus partidos e legislaturas.</h4>
-          <a href="#consultaDeputados"><button class="btPadrao">DEPUTADOS</button></a>
+          <a href="#consultaDeputados"><span class="btPadrao">DEPUTADOS</span></a>
       </section>
       
     </article>
@@ -46,15 +48,15 @@
         <h2>DEPUTADOS</h2>
         <p>Consulte aqui os Deputados da Legislatura atual:</p>
         <input type="text" value="" placeholder="Nome do Deputado" >
-        <button id="btBuscarDeputados" class="btPadrao">
+        <span id="btBuscarDeputados" class="btPadrao">
             <i class="fa fa-search"></i>
             BUSCAR
-        </button>
+        </span>
         
         <section id="boxListagemDeputados">
           
           <article class="boxListagem">
-            <img src="img/deputado1.jpg" alt="" width="100%">
+            <img src="img/deputado1.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -64,7 +66,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -74,7 +76,7 @@
           </article>
 
           <article class="boxListagem">
-            <img src="img/deputado2.jpg" alt="" width="100%">
+            <img src="img/deputado2.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -84,7 +86,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -94,7 +96,7 @@
           </article>
 
           <article class="boxListagem">
-            <img src="img/deputado3.jpg" alt="" width="100%">
+            <img src="img/deputado3.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -104,7 +106,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -114,7 +116,7 @@
           </article>
 
           <article class="boxListagem">
-            <img src="img/deputado4.jpg" alt="" width="100%">
+            <img src="img/deputado4.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -124,7 +126,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -134,7 +136,7 @@
           </article>
 
           <article class="boxListagem">
-            <img src="img/deputado5.jpg" alt="" width="100%">
+            <img src="img/deputado5.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -144,7 +146,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -154,7 +156,7 @@
           </article>
 
           <article class="boxListagem">
-            <img src="img/deputado6.jpg" alt="" width="100%">
+            <img src="img/deputado6.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -164,7 +166,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -174,7 +176,7 @@
           </article>
 
           <article class="boxListagem">
-            <img src="img/deputado7.jpg" alt="" width="100%">
+            <img src="img/deputado7.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -184,7 +186,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -194,7 +196,7 @@
           </article>
 
           <article class="boxListagem">
-            <img src="img/deputado8.jpg" alt="" width="100%">
+            <img src="img/deputado8.jpg" alt="" class="imgPreenchida">
             <section class="informativo">
               <p>Fulano de tal <br>(PL-BA)</p>
               <section class="descricaoDeputado">
@@ -204,7 +206,7 @@
                   <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
                   <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
                 </ul>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -220,18 +222,18 @@
         <h2>PARTIDOS</h2>
         <p>Consulte aqui os Partidos Existentes:</p>
         <input type="text" value="" placeholder="Nome do Partido" >
-        <button id="btBuscarPartido" class="btPadrao">
+        <span id="btBuscarPartido" class="btPadrao">
             <i class="fa fa-search"></i>
             BUSCAR
-        </button>
+        </span>
         
         <section id="boxListagemPartido">
           
           <article class="boxListagem">
-            <img class="imgPartido" src="img/logopartido1.png" alt="" width="95%">
+            <img class="imgPartido" src="img/logopartido1.png" alt="">
             <section class="informativo, informativoPartido">
               <p class="pPartido">Partido XPTO</p>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -240,10 +242,10 @@
           </article>
 
           <article class="boxListagem">
-            <img class="imgPartido" src="img/logopartido2.png" alt="" width="95%">
+            <img class="imgPartido" src="img/logopartido2.png" alt="">
             <section class="informativo, informativoPartido">
               <p class="pPartido">Partido XPTO</p>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -252,10 +254,10 @@
           </article>
 
           <article class="boxListagem">
-            <img class="imgPartido" src="img/logopartido3.gif" alt="" width="95%">
+            <img class="imgPartido" src="img/logopartido3.gif" alt="">
             <section class="informativo, informativoPartido">
               <p class="pPartido">Partido XPTO</p>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
@@ -267,19 +269,20 @@
             <img class="imgPartido" src="img/logopartido4.png" alt="">
             <section class="informativo, informativoPartido">
               <p class="pPartido">Partido XPTO</p>
-                <div id="icons">
+                <div class="icons">
                   <a href=""><span class="consertoIconeInstagram"><i class="fa fa-facebook"></i></span></a>
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-instagram"></i></a>
                 </div>
             </section>
           </article>
+        </section>  
       </article>
       
       <article id="noticias">
         <h2>NOTÍCIAS</h2>
         <section id="noticia1">
-          <img src="img/queimada.jpg" alt="Queimada na Amazônia" width="50%">
+          <img src="img/queimada.jpg" alt="Queimada na Amazônia" style="width: 50%">
           <section id="descricaoNoticia" style="width: 50%">
           <h3>Comitiva da Câmara dos Deputados visita áreas queimadas no Pantanal</h3>
           <p>
@@ -288,9 +291,9 @@
           <footer id="footerNoticia">
             Fonte: Agência Câmara de Notícias / 18/09/2020 - 16:01
           </footer>
-          <button id="btVejaMaisNoticias" class="btPadrao">
+          <span id="btVejaMaisNoticias" class="btPadrao">
             VEJA MAIS NOTÍCIAS
-          </button>
+          </span>
           </section>
         </section>
       </article>
@@ -301,9 +304,9 @@
         <div class="flexbox">
           <input class="inputEventos" type="text" value="" placeholder="Descrição Evento" >
           <input class="inputEventos" type="text" value="" placeholder="Data do Evento" >
-          <button id="btBuscarEventos" class="clear btPadrao">
+          <span id="btBuscarEventos" class="clear btPadrao">
               BUSCAR
-          </button>
+          </span>
         </div>
         <div class="flexbox">
         <section class="listagemEventos">
@@ -333,7 +336,7 @@
           </div>
         </section>
         </div>
-        <button id="btEventosDaSemana" class="btPadrao">EVENTOS DA SEMANA</button>
+        <span id="btEventosDaSemana" class="btPadrao">EVENTOS DA SEMANA</span>
       </article>
       <article id="projetos" class="cabecalho">
         <h2>PROJETOS DE LEI</h2>
@@ -383,7 +386,7 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur minus qui quaerat tempore ipsum enim recusandae, at libero officia omnis cum dolore praesentium quis ea reprehenderit beatae maxime! Quia, hic?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt illo error debitis modi voluptatem, dolor dolore, molestiae quaerat dolores quam minima itaque cum eos doloribus id. Unde, ad minus?</p>
         <div style="text-align: center">
-        <a href="mailto:leperego@hotmail.com"><button id="btContato" class="btPadrao">ENVIE-NOS UM EMAIL</button></a>
+        <a href="mailto:leperego@hotmail.com"><span id="btContato" class="btPadrao">ENVIE-NOS UM EMAIL</span></a>
         </div>
       </article>
     </main>
