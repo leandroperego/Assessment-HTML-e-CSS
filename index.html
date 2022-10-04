@@ -9,11 +9,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
+    <!-- EVENTO PARA HEADER STICK -->
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
+      
     <article id="telaInicial">
-      <header>
+      <header class="reveal">
         <a class="aTelaInicial" href="#telaInicial">
           <section id="logo">
           <img id="imgLogo" src="img/logo.png" alt="Logo" width="40" height="40">
@@ -24,12 +26,12 @@
         <nav>
           <ul id="ulNav">
             <li class="liNav"><a class="aTelaInicial" href="#telaInicial">INICIO</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="#consultaDeputados">DEPUTADOS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="#consultaPartidos">PARTIDOS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="#noticias">NOTICIAS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="#eventos">EVENTOS</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="#projetos">PROJETOS DE LEI</a></li>
-            <li class="liNav"><a class="aTelaInicial" href="#contato">CONTATO</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#abaDeputados">DEPUTADOS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#abaPartidos">PARTIDOS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#abaNoticias">NOTICIAS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#abaEventos">EVENTOS</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#abaProjetos">PROJETOS DE LEI</a></li>
+            <li class="liNav"><a class="aTelaInicial" href="#abaContato">CONTATO</a></li>
           </ul>
           <div class="clear"></div>
         </nav>
@@ -39,11 +41,14 @@
       <section id="chamadaInicial">
           <h2>QUEM SÃO OS DEPUTADOS</h2>
           <h4>Conheça os deputados, seus partidos e legislaturas.</h4>
-          <a href="#consultaDeputados"><span class="btPadrao">DEPUTADOS</span></a>
+          <a href="#abaDeputados"><span class="btPadrao">DEPUTADOS</span></a>
       </section>
       
     </article>
+
+    
     <main>
+      <div id="abaDeputados" class="caminhoHref"></div>
       <article id="consultaDeputados" class="cabecalho">
         <h2>DEPUTADOS</h2>
         <p>Consulte aqui os Deputados da Legislatura atual:</p>
@@ -217,7 +222,8 @@
           
         </section>
       </article>
-      
+
+       <div id="abaPartidos" class="caminhoHref"></div>
       <article id="consultaPartidos" class="cabecalho">
         <h2>PARTIDOS</h2>
         <p>Consulte aqui os Partidos Existentes:</p>
@@ -278,7 +284,8 @@
           </article>
         </section>  
       </article>
-      
+
+       <div id="abaNoticias" class="caminhoHref"></div>
       <article id="noticias">
         <h2>NOTÍCIAS</h2>
         <section id="noticia1">
@@ -298,6 +305,7 @@
         </section>
       </article>
 
+       <div id="abaEventos" class="caminhoHref"></div>
       <article id="eventos" class="cabecalho">
         <h2>EVENTOS</h2>
         <p>Consulte aqui os eventos agendados:</p>
@@ -338,6 +346,8 @@
         </div>
         <span id="btEventosDaSemana" class="btPadrao">EVENTOS DA SEMANA</span>
       </article>
+
+       <div id="abaProjetos" class="caminhoHref"></div>
       <article id="projetos" class="cabecalho">
         <h2>PROJETOS DE LEI</h2>
         <p>Consulte aqui os Projetos de Lei em votação:</p>
@@ -379,6 +389,7 @@
         </table>
       </article>
 
+       <div id="abaContato" class="caminhoHref"></div>
       <article id="contato" class="cabecalho">
         <h2>CONTATO</h2>
         <h3 class="subtitulo">Fale Conosco</h3>
@@ -390,8 +401,16 @@
         </div>
       </article>
     </main>
+    
     <footer id="rodapePagina">
       Instituto Infnet - Assessment Fundamentos de Programação Web
+      <p id="seloCSS">
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS válido!" />
+    </a>
+</p>
     </footer>
       <a href="#telaInicial"><i id="voltarAoTopo" class="fa fa-chevron-up"></i></a>
   </body>

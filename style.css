@@ -36,8 +36,9 @@ header{
 /*   display: flex;
   justify-content: space-between; */
   padding-left: 200px;
-  position: absolute;
+  position: fixed;
   top: 20px;
+  z-index: 1;
 }
 main{
   width: 80%;
@@ -405,4 +406,30 @@ td:first-child{
   background-color: rgb(000,50,80);
   border-radius: 50%;
   padding: 7px 9px 9px 8px;
+}
+
+.reveal{
+  position: fixed;
+  top: 0;
+  transform: translateY(20px);
+  opacity: 1;
+  transition: all 1s linear;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+  background-color: rgb(000,50,80);
+}
+
+.reveal.desactive{
+  transition: all linear;
+}
+
+#seloCSS{
+ margin-top: 20px; 
+}
+
+.caminhoHref{
+  height: 20px;
 }
